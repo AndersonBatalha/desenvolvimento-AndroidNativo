@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConversorActivity"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_conversor_valorreal"
+        android:hint="@string/dica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberSigned"
+        />
+
+    <Button
+        android:id="@+id/btn_activity_converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/converter"
+        android:layout_marginBottom="40dp"
+        />
+    <!--android:onClick="converterMoedas"-->
+
+    <TextView
+        android:id="@+id/text_conversor_valorconvertido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+    <string name="dica">Digite um valor...</string>
+    <string name="converter">Converter</string>
+</resources>

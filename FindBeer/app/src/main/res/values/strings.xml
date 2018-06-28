@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Find Beer</string>
+    <string-array name="tipo_cerveja">
+        <item>Pilsen</item>
+        <item>Lager</item>
+        <item>Bock</item>
+        <item>Ale</item>
+        <item>Amber Ale Red</item>
+        <item>Strong Ale</item>
+        <item>Weissbier</item>
+        <item>Barley Wine</item>
+        <item>Stout</item>
+        <item>Dubbel</item>
+        <item>Malzbier</item>
+        <item>Schwarzbier</item>
+    </string-array>
+</resources>

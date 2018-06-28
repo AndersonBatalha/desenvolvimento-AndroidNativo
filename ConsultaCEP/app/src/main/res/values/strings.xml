@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConsultaCEP</string>
+    <string name="buscar">Buscar CEP</string>
+</resources>
