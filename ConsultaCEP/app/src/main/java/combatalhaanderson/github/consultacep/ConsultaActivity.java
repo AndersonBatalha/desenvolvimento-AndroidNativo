@@ -5,6 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.concurrent.ExecutionException;
+
+import model.CEP;
 import service.CorreiosService;
 
 
@@ -27,6 +32,17 @@ public class ConsultaActivity extends AppCompatActivity {
 
         String cep = this.edtCEP.getText().toString();
 
-        CorreiosService correiosService = new CorreiosService(cep);
+        try {
+            CEP cepRetorno = new CorreiosService(cep).execute().get();
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        catch (IllegalArgumentException e) {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT);
+        }
     }
 }
